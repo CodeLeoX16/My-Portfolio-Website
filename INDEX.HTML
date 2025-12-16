@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO-PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef9b020d2e.js" crossorigin="anonymous"></script>
+    <style>
+        /* Certifications section styles */
+        #certifications{ padding:60px 0; }
+        .cert-list{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; margin-top:30px; }
+        .cert-card{ background:linear-gradient(180deg, rgba(255,0,79,0.06), rgba(0,0,0,0.25)); border:1px solid rgba(255,0,79,0.12); padding:18px; border-radius:14px; display:flex; gap:16px; align-items:center; transition:transform .28s ease, box-shadow .28s ease; }
+        .cert-card:hover{ transform:translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,0.45); }
+        .cert-icon{ width:72px; height:72px; min-width:72px; border-radius:50%; background:linear-gradient(135deg,#ff004f,#ff7aa2); display:flex; align-items:center; justify-content:center; color:#fff; font-size:28px; box-shadow: 0 6px 18px rgba(255,0,79,0.12); }
+        .cert-info h3{ font-size:18px; margin-bottom:6px; color:#fff; }
+        .cert-info p{ color:#cfcfcf; font-size:14px; margin-bottom:8px; }
+        .cert-btn{ display:inline-block; padding:8px 14px; background:transparent; border:1px solid #ff004f; color:#ffb7c7; border-radius:8px; text-decoration:none; font-size:13px; transition:background .2s, color .2s; }
+        .cert-btn:hover{ background:#ff004f; color:#fff; }
+        /* Languages & Tools Section */
+        #skills-lang{ padding:60px 0; background:linear-gradient(135deg, rgba(0,0,0,0.4), rgba(255,0,79,0.03)); }
+        .skills-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:20px; margin-top:30px; }
+        .skill-card{ background:linear-gradient(135deg, rgba(255,0,79,0.08), rgba(0,0,0,0.2)); border:1px solid rgba(255,0,79,0.1); padding:20px; border-radius:12px; text-align:center; transition:transform .3s ease, box-shadow .3s ease; cursor:pointer; }
+        .skill-card:hover{ transform:translateY(-10px) scale(1.05); box-shadow:0 15px 40px rgba(255,0,79,0.15); background:linear-gradient(135deg, rgba(255,0,79,0.12), rgba(0,0,0,0.3)); }
+        .skill-icon{ font-size:45px; color:#ff004f; margin-bottom:10px; display:block; }
+        .skill-card h3{ font-size:16px; color:#fff; margin:0; }
+        .tools-section{ margin-top:50px; }
+        @media (max-width:600px){ .cert-card{ flex-direction:row; gap:12px; } .skill-card{ padding:15px; } }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <!-- <img src="myimage.jpg" class="bg"> -->
+        <div class="container">
+            
+            <nav>
+                <img src="logo2.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-lang">Skills</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Full Stack MERN Developer</p>
+                <h1>Hi, I'm <span>Somnath</span> <br>Bhunia from Kolkata</h1>
+            </div>
+            
+        </div>
+    </div>
+    <!-- -----------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about2.png" class="img">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and driven Computer Science and Engineering (CSE) student at Brainware University, currently navigating the 6th semester of my academic journey. My expertise lies at the intersection of robust backend systems and modern frontend development.</p>
+                    <p>Feel free to explore my portfolio to see some of the projects I have worked on. If you have any questions or would like to collaborate, please don't hesitate to contact me.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Development</span><br> Proficient in the MERN Stack (MongoDB, Express.js, React.js, Node.js), I build and deploy scalable, responsive, and dynamic web applications from concept to production.</li>
+                            <li><span>Problem-Solving Foundation</span><br>I possess a strong command of Data Structures and Algorithms (DSA), leveraging C++ to tackle complex technical challenges and optimize application performance.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Nestelo (Full-Stack Travel Platform)</span><br>Developed a dynamic, full-stack application (Node.js/MongoDB) for exploring destinations and sharing travel experiences, featuring secure user authentication via Passport.js.</li>
+                            <li><span>QuickMeet (WebRTC Video App)</span><br>Built a lightweight, real-time video conferencing solution using WebRTC and the MERN stack (React/Node.js), implementing essential features like screen sharing and instant collaboration.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>Pursuing B.Tech in Computer Science and Engineering at Brainware University</li>
+                            <li><span>2023</span><br>Completed Higher Secondary with 81%(PCM)</li>
+                            <li><span>2021</span><br>Completed Secondary with 90%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------services-------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Custom Web Application Development</h2>
+                    <p>Building dynamic, full-stack applications from concept to deployment using the MERN stack (MongoDB, Express, React, Node.js).</p>
+                    <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/">Learn More</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-laptop-code"></i> 
+                    <h2>RESTful API Design & Integration</h2>
+                    <p>Creating secure, scalable backend services and APIs (Express/Node.js) to power modern web and mobile frontends.</p>
+                    <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/">Learn More</a>
+                </div>
+        
+                
+            </div>
+
+        </div>
+     </div>
+    <!-- Languages & Tools Section -->
+    <section id="skills-lang">
+        <div class="container">
+            <h1 class="sub-title">Languages I Know</h1>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-java skill-icon"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon" style="font-size:45px; color:#3776ab;"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-cpp skill-icon" style="color:#00599c;"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon" style="color:#e34c26;"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon" style="color:#1572b6;"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square skill-icon" style="color:#f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cube skill-icon" style="color:#ff9900;"></i>
+                    <h3>OOPs</h3>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h1 class="sub-title">Tools & Technologies</h1>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-code skill-icon" style="color:#007acc;"></i>
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python skill-icon" style="color:#ffb600;"></i>
+                        <h3>Jupyter</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-laptop-code skill-icon" style="color:#087cfa;"></i>
+                        <h3>PyCharm</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database skill-icon" style="color:#13aa52;"></i>
+                        <h3>MongoDB</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git skill-icon" style="color:#f1502f;"></i>
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-github skill-icon"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certification -->
+    <section id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="cert-list">
+                <article class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="cert-info">
+                        <h3>DECODE PROGRAMMING POWERHOUSE: C++,
+JAVA, PYTHON & DSA COURSE</h3>
+                        <p>PW Skills — 2025</p>
+                        <a class="cert-btn" href="https://pwskills.com/learn/certificate/f7720ce1-a6a9-4601-9bcb-4e91898ea8a0/" target="_blank" rel="noopener noreferrer">View Certificate</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+     <!-- -----------porfolio-------------- -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            
+            <!-- Web Projects -->
+            <h2 style="color:#ff7aa2; font-size:32px; margin-top:40px; margin-bottom:20px;">Web Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" >
+                    <div class="layer">
+                        <h3>Nestelo – Your Gateway to the World's Most Breathtaking Destinations! 🌍✨</h3>
+                        <p>Nestelo is a full-stack travel exploration platform built using the MERN stack (MongoDB, Express, Node.js).
+                         It allows users to discover destinations, share experiences, and read reviews within a secure, dynamic environment powered by Passport.js authentication.
+                        </p>
+                        <a href="https://nestelo12-1.onrender.com/listings"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" >
+                    <div class="layer">
+                        <h3>QuickMeet — Instant, Privacy-Friendly Video Meetings! 🌍</h3>
+                        <p>uickMeet is a lightweight, WebRTC-powered video collaboration app built with React and Node.js.
+                         It features instant joining, screen sharing, and in-meeting chat, offering a fast, no-friction alternative to complex video tools.
+                        </p>
+                        <a href="https://quickmeet-4.onrender.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="work3.jpg" >
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>This portfolio page showcases my skills, projects, and services as a frontend developer with responsive design.
+                            
+                        </p>
+                        <a href="https://github.com/CodeLeoX16/My-Portfolio"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            
+            <!-- Python Projects
+            <h2 style="color:#ff7aa2; font-size:32px; margin-top:50px; margin-bottom:20px;">Python Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" style="background:#1a1a2e;" alt="Python Project 1">
+                    <div class="layer">
+                        <h3>Data Analysis Project</h3>
+                        <p>Python-based data analysis with pandas and matplotlib for visualization and insights generation.
+                            
+                        </p>
+                        <a href="https://github.com/CodeLeoX16"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" style="background:#1a1a2e;" alt="Python Project 2">
+                    <div class="layer">
+                        <h3>DSA Problem Solving</h3>
+                        <p>Complete Data Structure and Algorithm solutions in Python with optimized approaches and complexity analysis.
+                            
+                        </p>
+                        <a href="https://leetcode.com/u/SOMNATH420/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg" style="background:#1a1a2e;" alt="Python Project 3">
+                    <div class="layer">
+                        <h3>Web Scraping Tool</h3>
+                        <p>Python web scraping application using BeautifulSoup and requests for data extraction and processing.
+                            
+                        </p>
+                        <a href="https://github.com/CodeLeoX16"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div> -->
+            <a href="#" class="btn"> See More Projects</a>
+         
+        </div>
+      </div>
+      <!-- -----------contact-------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+            <div class="cntact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:somnath.bhunia1608@gmail.com">somnath.bhunia1608@gmail.com</a></p>
+              <p><i class="fa-solid fa-phone-volume"></i> <a href="https://wa.me/919907876770" target="_blank" rel="noopener noreferrer">+91-9907876770</a></p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CodeLeoX16"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100081845620260"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/s_o_m_n_a_t_h_4_2_0/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+              </div>
+              <a href="https://drive.google.com/file/d/1EM622-1LQc-10uyhpUaaVk3yEqvxcxVu/view?usp=sharing" target="_blank" class="btn btn2">Download CV</a>
+            </div>
+            <div class="cntact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span class="success" id="msg"></span>
+              <span class="error" id="msg"></span>
+            </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ CodeLeoX16. Made With<i class="fa-solid fa-heart"></i>By Me</p>
+      </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        window.addEventListener('scroll', function() {
+        let navbar = document.querySelector('nav');
+        if (window.scrollY > 60) {
+            navbar.classList.add('scrolled'); // Add class when scrolling down
+        } else {
+            navbar.classList.remove('scrolled'); // Remove class at top
+        }
+    });
+    </script>
+    <script>
+        
+        var sidemenu=  document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+            sidemenu.style.visibility = "visible"; // Ensure sidemenu is visible
+        }
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzaFfRR5HVZtJXKo36g9ktCJOwYU9FbZGtYSS5Nqzc-cOK1G6jEx28Bd-DVMoYLHE5q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully";
+                msg.style.display="block";
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+            })
+            // form.reset();
+            .catch(error => {
+                msg.innerHTML="Message Sent Failed";
+                msg.style.display="block";
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+            })
+            form.reset();
+        })
+      </script>
+</body>
+</html>
