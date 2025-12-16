@@ -15,16 +15,7 @@ A modern, responsive personal portfolio website showcasing my projects, skills, 
 
 ## 🚀 Live Demo
 
-Visit the live website:  [View Portfolio](codeleox16-somnath.netlify.app)
-
-## 📸 Screenshots
-
-<div align="center">
-  <img src="work-1.png" alt="Project 1" width="30%">
-  <img src="work-2.png" alt="Project 2" width="30%">
-  <img src="work-3.png" alt="Project 3" width="30%">
-</div>
-
+Visit the live website:  [View Portfolio](https://codeleox16-somnath.netlify.app/)
 ## 🛠️ Built With
 
 - **HTML5** - Structure and content
@@ -88,7 +79,7 @@ Feel free to fork this repository and customize it for your own use:
 ## 📬 Contact
 
 - **GitHub:** [@CodeLeoX16](https://github.com/CodeLeoX16)
-- **Portfolio:** [View Live Site](https://codeleoX16.github.io/My-Portfolio-Website/)
+- **Portfolio:** [View Live Site](https://codeleox16-somnath.netlify.app/)
 
 ## 📄 License
 
