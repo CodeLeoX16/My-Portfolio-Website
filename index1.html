@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Somnath Bhunia — Full Stack MERN Developer</title>
+  <meta name="description" content="Portfolio of Somnath Bhunia — Full Stack MERN developer. Projects, skills, contact and GitHub-powered projects." />
+  <meta name="author" content="Somnath Bhunia" />
+  <link rel="preconnect" href="https://api.github.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header" class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#header" class="brand" aria-label="Homepage">
+          <img src="logo2.png" alt="logo" class="logo" loading="lazy">
+        </a>
+
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidemenu" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="sidemenu" class="sidemenu" role="menubar" aria-hidden="true">
+          <li role="none"><a role="menuitem" href="#home"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+          <li role="none"><a role="menuitem" href="#about"><i class="fa-solid fa-user"></i>&nbsp;About</a></li>
+          <li role="none"><a role="menuitem" href="#skills-lang"><i class="fa-solid fa-code"></i>&nbsp;Skills</a></li>
+          <li role="none"><a role="menuitem" href="#portfolio"><i class="fa-solid fa-briefcase"></i>&nbsp;Works</a></li>
+          <li role="none"><a role="menuitem" href="#contact"><i class="fa-solid fa-envelope"></i>&nbsp;Contact</a></li>
+          <li role="none"><button class="menu-close" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="btn-icon" type="button" aria-label="Toggle theme"><i id="theme-icon" class="fa-solid fa-moon"></i></button>
+        </div>
+      </nav>
+      <div id="nav-overlay" class="nav-overlay" hidden></div>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="header-text">
+          <p class="eyebrow">MERN • Data Science • Gen AI</p>
+          <h1>Hi, I'm <span class="accent">Somnath</span> Bhunia from Kolkata</h1>
+          <p class="lead">I build MERN applications, data-driven systems, and Gen AI powered solutions.</p>
+          <div class="header-ctas">
+            <a href="#portfolio" class="btn">See my work</a>
+            <a href="https://drive.google.com/file/d/1F7VNX6IBrdLgB8DPvYnBAb8EHYa1AKD2/view?usp=drivesdk" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="about2.png" alt="Somnath portrait" loading="lazy">
+        </div>
+        <div class="about-content">
+          <p class="eyebrow">Who I am</p>
+          <h2 class="sub-title">About Me</h2>
+          <p>I'm a Full Stack Developer, Data Science enthusiast, and problem solver from Kolkata, passionate about building scalable, production-ready applications with the MERN stack. I combine technical expertise with algorithmic thinking to create impactful digital solutions that solve real-world problems.</p>
+          <p>Currently pursuing B.Tech in CSE with Data Science specialization at Brainware University. I specialize in designing end-to-end systems—from API architecture and database optimization to machine learning pipelines and cloud deployment. I'm deeply committed to clean code, best practices, and continuously learning emerging technologies in web development, AI, and DevOps.</p>
+          <p>Beyond coding, I actively contribute to open-source projects and share insights on DSA, web development, and data science. I thrive in collaborative environments and love mentoring aspiring developers.</p>
+
+          <ul class="about-highlights">
+            <li><i class="fa-solid fa-graduation-cap"></i> B.Tech (CSE, Data Science) — Brainware University (ongoing)</li>
+            <li><i class="fa-solid fa-code"></i> Full-Stack MERN, ML/Data Science, RESTful APIs, DevOps & Cloud</li>
+            <li><i class="fa-solid fa-handshake"></i> Open to internships, freelance projects & collaborative work</li>
+          </ul>
+
+          <div class="tabs" role="tablist" aria-label="About tabs">
+            <button class="tab-links active" role="tab" aria-selected="true" data-target="skills-tab" type="button">Skills</button>
+            <button class="tab-links" role="tab" aria-selected="false" data-target="experience-tab" type="button">Experience</button>
+            <button class="tab-links" role="tab" aria-selected="false" data-target="education-tab" type="button">Education</button>
+          </div>
+
+          <div class="tab-panels">
+            <div id="skills-tab" class="tab-panel active" role="tabpanel">
+              <ul>
+                <li><strong>Full-Stack Development (MERN)</strong> — MongoDB, Express.js, React, Node.js with JWT authentication, real-time features, responsive design, and testing.</li>
+                <li><strong>Problem Solving & DSA</strong> — Proficient in C++ and Data Structures & Algorithms for optimized, scalable solutions.</li>
+                <li><strong>Data Science & Machine Learning</strong> — Python, Pandas, NumPy, scikit-learn, Matplotlib for end-to-end ML pipelines and exploratory data analysis.</li>
+                <li><strong>DevOps & Deployment</strong> — Docker containerization, AWS (EC2, S3)(Basics), Git workflows.</li>
+                <li><strong>Database Design</strong> — MongoDB aggregation, SQL optimization, indexing, and data modeling.</li>
+              </ul>
+            </div>
+
+            <div id="experience-tab" class="tab-panel" role="tabpanel" hidden>
+              <ul>
+                <li><strong>Open to opportunities</strong> — Actively seeking internships and entry-level positions in full-stack development, data science, and AI engineering.</li>
+                <li><strong>Self-directed learning</strong> — Built multiple portfolio projects independently, demonstrating end-to-end project execution and problem-solving.</li>
+              </ul>
+            </div>
+
+            <div id="education-tab" class="tab-panel" role="tabpanel" hidden>
+              <ul>
+                <li>2023 — B.Tech (CSE, Data Science) — Brainware University (ongoing)</li>
+                <li>2023 — Higher Secondary (81% in PCM)</li>
+                <li>2021 — Secondary (90%)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <article>
+            <i class="fa-solid fa-chart-bar service-icon"></i>
+            <h3>Data Science & Machine Learning</h3>
+            <p>End-to-end ML pipelines with EDA, model preparation, and visualization using Python libraries.</p>
+            <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </article>
+          <article>
+            <i class="fa-solid fa-code service-icon"></i>
+            <h3>Custom Web Application Development</h3>
+            <p>End-to-end web apps using MERN, with CI/CD, testing and monitoring.</p>
+            <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </article>
+          <article>
+            <i class="fa-solid fa-laptop-code service-icon"></i>
+            <h3>API Design & Integration</h3>
+            <p>Designing RESTful services and secure authentication strategies for scale.</p>
+            <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/" target="_blank" rel="noopener noreferrer">Learn More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-lang" class="section skills">
+      <div class="container">
+        <h2 class="sub-title">Languages & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fab fa-python skill-icon icon-python"></i><h4>Python</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-code skill-icon icon-cpp"></i><h4>C++</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-chess skill-icon"></i><h4>DSA</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-database skill-icon icon-mongodb"></i><h4>MongoDB</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-server skill-icon"></i><h4>Express.js</h4></div>
+          <div class="skill-card"><i class="fab fa-react skill-icon icon-react"></i><h4>React</h4></div>
+          <div class="skill-card"><i class="fab fa-node skill-icon icon-node"></i><h4>Node.js</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-chart-line skill-icon"></i><h4>Pandas</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-calculator skill-icon"></i><h4>NumPy</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-brain skill-icon"></i><h4>scikit-learn</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-magnifying-glass skill-icon"></i><h4>EDA</h4></div>
+          <div class="skill-card"><i class="fab fa-docker skill-icon"></i><h4>Docker</h4></div>
+          <div class="skill-card"><i class="fab fa-aws skill-icon"></i><h4>AWS</h4></div>
+          <div class="skill-card"><i class="fab fa-git skill-icon"></i><h4>Git</h4></div>
+          <div class="skill-card"><i class="fab fa-github skill-icon"></i><h4>GitHub</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-code skill-icon"></i><h4>VS Code</h4></div>
+          <div class="skill-card"><i class="fa-solid fa-laptop skill-icon"></i><h4>PyCharm</h4></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <div class="portfolio-header">
+          <h2 class="sub-title">Featured Projects</h2>
+          <p class="lead">Showcasing real-world applications built with modern technologies</p>
+        </div>
+
+        <div id="work-list" class="work-list">
+          <article class="work">
+            <div class="work-image-wrapper">
+              <img src="work-4.png" alt="EDA Portfolio screenshot" loading="lazy">
+            </div>
+            <div class="layer">
+              <h3>EDA Portfolio — Data Analysis</h3>
+              <p>Comprehensive exploratory data analysis with visualizations, statistical insights, and data-driven recommendations.</p>
+              <div class="work-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">EDA</span>
+              </div>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open EDA Portfolio"><i class="fa-solid fa-up-right-from-square"></i> View Project</a>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-image-wrapper">
+              <img src="work-3.png" alt="Forest Cover Type Prediction screenshot" loading="lazy">
+            </div>
+            <div class="layer">
+              <h3>Forest Cover Type — Prediction Model</h3>
+              <p>Machine learning model predicting forest cover types from cartographic variables using USFS Region 2 data with classification algorithms.</p>
+              <div class="work-tags">
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">ML</span>
+              </div>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open Forest Cover Type"><i class="fa-solid fa-up-right-from-square"></i> View Project</a>
+            </div>
+          </article>
+
+          <article class="work featured-work">
+            <div class="work-image-wrapper">
+              <img src="work-1.png" alt="Nestelo screenshot" loading="lazy">
+              <span class="work-badge">Featured</span>
+            </div>
+            <div class="layer">
+              <h3>Nestelo — Travel Platform</h3>
+              <p>Full-stack travel exploration platform with user authentication, listings management, and booking system using MERN stack & Passport.js.</p>
+              <div class="work-tags">
+                <span class="tag">MERN</span>
+                <span class="tag">Passport.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <a href="https://nestelo12-1.onrender.com/listings" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open Nestelo"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </article>
+
+          <article class="work">
+            <div class="work-image-wrapper">
+              <img src="work-2.png" alt="QuickMeet screenshot" loading="lazy">
+            </div>
+            <div class="layer">
+              <h3>QuickMeet — Video Conferencing</h3>
+              <p>Real-time video conferencing platform with screen sharing and chat functionality using WebRTC and React.</p>
+              <div class="work-tags">
+                <span class="tag">React</span>
+                <span class="tag">WebRTC</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open QuickMeet"><i class="fa-solid fa-up-right-from-square"></i> View Project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-cta">
+          <p class="muted">Explore more of my work and contributions</p>
+          <a href="https://github.com/CodeLeoX16?tab=repositories" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i> View All Projects on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section certs">
+      <div class="container">
+      <h2 class="sub-title">Certifications</h2>
+      <div class="cert-list">
+        <article class="cert-card">
+        <i class="fa-solid fa-certificate cert-icon"></i>
+        <div>
+          <h3>Decode Programming Powerhouse — C++, Java, Python & DSA</h3>
+          <p>PW Skills — 2025</p>
+          <a class="btn-link" href="https://pwskills.com/learn/certificate/f7720ce1-a6a9-4601-9bcb-4e91898ea8a0/" target="_blank" rel="noopener noreferrer">View Certificate</a>
+        </div>
+        </article>
+      </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+      <h2 class="sub-title">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+        <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:somnath.bhunia1603@gmail.com">somnath.bhunia1603@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="https://wa.me/919907876770" target="_blank" rel="noopener noreferrer">+91-9907876770</a></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/somnath-bhunia-3b300b328/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/CodeLeoX16" aria-label="GitHub"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100081845620260" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/s_o_m_n_a_t_h_4_2_0/" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        </div>
+
+        <form id="contact-form" name="submit-to-google-sheet" class="contact-form" aria-label="Contact form">
+        <label for="name">Your Name</label>
+        <input id="name" name="Name" type="text" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="Message" rows="6" required></textarea>
+
+        <input type="text" name="company" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" title="This field is for robots only">
+
+        <button type="submit" class="btn">Send Message</button>
+        <div id="msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+      <small class="muted">Copyright © CodeLeoX16. Made with ❤️</small>
+      </div>
+    </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
